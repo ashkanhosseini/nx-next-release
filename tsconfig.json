@@ -5,6 +5,9 @@
   "references": [
     {
       "path": "./packages/package-1"
+    },
+    {
+      "path": "./packages/package-2"
     }
   ]
 }
