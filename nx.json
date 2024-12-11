@@ -53,5 +53,10 @@
         "bundleConfigAsCjs": true
       }
     }
+  },
+  "release": {
+    "version": {
+      "preVersionCommand": "yarn dlx nx run-many -t build"
+    }
   }
 }

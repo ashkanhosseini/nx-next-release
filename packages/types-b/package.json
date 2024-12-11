@@ -1,0 +1,28 @@
+{
+  "name": "@myorg/types-b",
+  "version": "0.0.1",
+  "dependencies": {
+    "@myorg/types-a": "workspace:*",
+    "@nx/rollup": "20.2.2"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "files": [
+    "dist",
+    "!**/*.tsbuildinfo"
+  ],
+  "nx": {
+    "sourceRoot": "packages/types-b/src",
+    "projectType": "library",
+    "name": "types-b"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.esm.js",
+      "default": "./dist/index.cjs.js"
+    }
+  },
+  "types": "./dist/index.d.ts"
+}
