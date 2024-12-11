@@ -4,7 +4,10 @@
   "files": [],
   "references": [
     {
-      "path": "./packages/package-1"
+      "path": "./packages/types-a"
+    },
+    {
+      "path": "./packages/types-b"
     }
   ]
 }
